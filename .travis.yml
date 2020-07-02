@@ -1,4 +1,7 @@
 sudo: required
+arch:
+  - amd64
+  - arm64
 script: make travis
 install:
   # AWS CLI is required for pushing the edge binaries to S3.
