@@ -185,7 +185,7 @@ travis-go:
 		-w /src \
 		-e GOCACHE=/src/.go/cache \
 		golang:$(GOVERSION) \
-		make build-linux build-darwin go-test perf travis-check
+		make build-linux go-test perf travis-check
 
 .PHONY: travis-check
 travis-check: check
